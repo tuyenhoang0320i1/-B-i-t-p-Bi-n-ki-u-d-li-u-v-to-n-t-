@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính diện tích hình tròn</title>
+    <style type="text/css">
+        label{
+            float: left;
+            width: 100px;
+        }
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1 style="color: blue">Program Tính diện tích hình tròn</h1>
+<form action=""method="post">
+    Nhập vào bán kính (R)
+    <input id="bankinh" type="text" name="radius"/></br>
+        Diện tích hình tròn của bạn là:
+    <input id="cdoi" type="text" name="convert"/></br>
+
+    <input type="button" onclick="tinh();" value= "Convert"/>
+    <script type="text/javascript">
+        function tinh () {
+            let r = parseFloat(document.getElementById("bankinh").value);
+            let area=r*r*3.14;
+            document.getElementById("cdoi").value=area;
+        }
+    </script>
+</form>
+</body>
+</html>

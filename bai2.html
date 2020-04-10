@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit).</title>
+    <style type="text/css">
+        label{
+            float: left;
+            width: 100px;
+        }
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1 style="color: blue">Program Chuyển đổi từ độ C sang độ F</h1>
+<form action=""method="post">
+        Nhập vào độ C
+    <input id="ddc" type="text" name="Cenci"></br>
+        Hiển thị kết quá
+        <input id="doid" type="text" name="convert"></br>
+        <input type="button" onclick="tinh();" value= "Convert">
+    <script type="text/javascript">
+        function tinh () {
+            let a1=parseFloat(document.getElementById("ddc").value);
+            let conve=a1*1.8+32;
+            document.getElementById("doid").value=conve;
+        }
+    </script>
+</form>
+</body>
+</html>
